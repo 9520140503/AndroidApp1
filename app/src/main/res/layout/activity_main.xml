@@ -12,14 +12,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
-        android:background="#810F0A0A"
+        android:background="#4D176C"
         android:gravity="center"
         android:padding="8dp"
         android:text="Mood Tracker"
-        android:textColor="#E25EC0"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:visibility="visible" />
+        />
 
     <GridLayout
         android:layout_width="match_parent"
