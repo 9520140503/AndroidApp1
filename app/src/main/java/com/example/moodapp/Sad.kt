@@ -1,6 +1,11 @@
 package com.example.moodapp
 
+import android.content.Intent
+import android.health.connect.datatypes.units.Length
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
+import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Button
@@ -15,6 +20,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import android.view.animation.AnimationUtils;
+import android.widget.PopupMenu
 
 class Sad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,5 +72,32 @@ class Sad : AppCompatActivity() {
         boost.setOnClickListener{
             qoute.visibility = View.VISIBLE;
         }
+
+        //Explicit:
+        watch.setOnClickListener {
+            val popMenu = PopupMenu(this, watch) // Use context properly
+            popMenu.menuInflater.inflate(R.menu.menu, popMenu.menu)
+
+            popMenu.setOnMenuItemClickListener { item: MenuItem ->
+                when (item.itemId) {
+                    R.id.i1 -> {
+                        Toast.makeText(this, "This is the pop1", Toast.LENGTH_SHORT).show()
+                        true
+                    }
+                    R.id.i2 -> {
+                        Toast.makeText(this, "This is the pop2", Toast.LENGTH_SHORT).show()
+                        true
+                    }
+                    else -> false
+                }
+            }
+            popMenu.show()
+        }
+
+//        //Implicit:
+//        watch.setOnClickListener{
+//            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+//            startActivity(intent);
+//        }
     }
 }

@@ -7,27 +7,42 @@
     android:padding="15dp"
     android:id="@+id/mood">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:background="#4D176C"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="Mood Tracker"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:layout_marginBottom="20dp"
+            android:background="#4D176C"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Mood Tracker"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+    </LinearLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="15dp"
         android:layout_weight="1"
-        android:rowCount="3"
         android:columnCount="2"
-        android:layout_margin="15dp">
+        android:rowCount="3">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -36,19 +51,19 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:orientation="vertical"
             android:layout_margin="10dp"
             android:background="@drawable/border"
+            android:orientation="vertical"
             android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Happy"
-                android:textStyle="bold"
                 android:layout_gravity="center"
+                android:text="Happy"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -65,19 +80,19 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:orientation="vertical"
             android:layout_margin="10dp"
             android:background="@drawable/border"
+            android:orientation="vertical"
             android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wow"
                 android:layout_gravity="center"
+                android:text="Wow"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -93,19 +108,19 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:orientation="vertical"
             android:layout_margin="10dp"
             android:background="@drawable/border"
+            android:orientation="vertical"
             android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Love"
                 android:layout_gravity="center"
+                android:text="Love"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -121,19 +136,19 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:orientation="vertical"
             android:layout_margin="10dp"
             android:background="@drawable/border"
+            android:orientation="vertical"
             android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Relax"
                 android:layout_gravity="center"
+                android:text="Relax"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -149,19 +164,19 @@
             android:layout_rowWeight="1"
             android:layout_column="0"
             android:layout_columnWeight="1"
-            android:orientation="vertical"
             android:layout_margin="10dp"
             android:background="@drawable/border"
+            android:orientation="vertical"
             android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sad"
                 android:layout_gravity="center"
+                android:text="Sad"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <ImageButton
                 android:id="@+id/sad"
@@ -178,21 +193,21 @@
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
-            android:orientation="vertical"
             android:layout_margin="10dp"
-            android:elevation="10dp"
             android:background="@drawable/border"
+            android:elevation="10dp"
+            android:orientation="vertical"
             android:padding="5dp">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quiet"
                 android:layout_gravity="center"
+                android:text="Quiet"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textStyle="bold" />
 
             <ImageButton
                 android:layout_width="wrap_content"
