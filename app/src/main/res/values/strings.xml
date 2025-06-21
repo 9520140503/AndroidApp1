@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Mood App</string>
+    <string name="terms_text">
+    • For personal mood tracking only.\n
+    \n
+    \n
+    • Not a medical or diagnostic tool.\n
+    \n
+    \n
+    • Data stays on your device.\n
+    \n
+    \n
+    • No personal info is collected.\n
+    \n
+    \n
+    • Using this app means you agree to these terms.
+</string>
 </resources>

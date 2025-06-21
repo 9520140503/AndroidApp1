@@ -34,6 +34,8 @@ class ActionBar : AppCompatActivity() {
                 Toast.makeText(this, "About Us", Toast.LENGTH_SHORT).show()
                 true
             }
+
+
             else -> super.onOptionsItemSelected(item)
         }
     }

@@ -4,26 +4,26 @@
     >
     <item
         android:id="@+id/i1"
-        android:title="contact us"
+        android:title="Rate us"
         android:icon="@drawable/appy"
         app:showAsAction="collapseActionView" />
 
 
     <item
         android:id="@+id/i2"
-        android:title="contact us"
+        android:title="Terms &amp; Conds"
         android:icon="@drawable/appy"
         app:showAsAction="collapseActionView"/>
 
     <item
         android:id="@+id/i3"
-        android:title="contact us"
+        android:title="Contact us"
         android:icon="@drawable/appy"
         app:showAsAction="collapseActionView"/>
 
     <item
-        android:id="@+id/i6"
-        android:title="contact us"
+        android:id="@+id/i4"
+        android:title="Profile"
         android:icon="@drawable/appy"
         app:showAsAction="collapseActionView"/>
 

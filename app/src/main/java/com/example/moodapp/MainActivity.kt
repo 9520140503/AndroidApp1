@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(actionBar)
 
         val hamBurger = ContextCompat.getDrawable(this,R.drawable.hamburger)
-        hamBurger?.setTint(ContextCompat.getColor(this,android.R.color.white))
+        hamBurger?.setTint(ContextCompat.getColor(this,android.R.color.black))
         actionBar.overflowIcon = hamBurger
 //        actionBar.overflowIcon?.setTint(ContextCompat.getColor(this,android.R.color.white))
     }
@@ -48,11 +48,27 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
       return  when (item.itemId){
           R.id.i1 -> {
-              Toast.makeText(this,"This is the feedback form",Toast.LENGTH_SHORT).show()
+              Toast.makeText(this,"Rate us",Toast.LENGTH_SHORT).show()
+              val intent = Intent(this,Rateus::class.java)
+              startActivity(intent)
               true
           }
           R.id.i2 -> {
-              Toast.makeText(this,"This is the contact form",Toast.LENGTH_SHORT).show()
+              Toast.makeText(this,"Terms and Conditions",Toast.LENGTH_SHORT).show()
+              val intent = Intent(this,Terms::class.java)
+              startActivity(intent)
+              true
+          }
+          R.id.i3 -> {
+              Toast.makeText(this, "Contact Us", Toast.LENGTH_SHORT).show()
+              val intent = Intent(this,Contactus::class.java)
+              startActivity(intent)
+              true
+          }
+          R.id.i4 -> {
+              Toast.makeText(this, "Profile Section", Toast.LENGTH_SHORT).show()
+              val intent = Intent(this,Profile::class.java)
+              startActivity(intent)
               true
           }
           else -> super.onOptionsItemSelected(item)

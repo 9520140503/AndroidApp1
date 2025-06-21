@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Feeling Sad ?"
-            android:background="#4D176C"
+            android:background="#3CFFFFFF"
             android:textStyle="bold"
             android:textSize="25sp"
             android:padding="10dp"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#C495C1">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:background="#3CFFFFFF"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:padding="12dp"
+        android:background="#E2DECF"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="#E2DECF"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/message_input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Your Message"
+        android:gravity="top"
+        android:padding="12dp"
+        android:background="#E2DECF"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#26968A"
+        android:layout_margin="20dp"/>
+</LinearLayout>

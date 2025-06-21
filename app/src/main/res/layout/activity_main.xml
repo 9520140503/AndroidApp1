@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="9"
             android:layout_marginBottom="20dp"
-            android:background="#4D176C"
+            android:background="#3CFFFFFF"
             android:gravity="center"
             android:padding="8dp"
             android:text="Mood Tracker"
@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="#4D176C"
+            android:background="#3CFFFFFF"
             android:minHeight="?attr/actionBarSize"
            />
     </LinearLayout>
