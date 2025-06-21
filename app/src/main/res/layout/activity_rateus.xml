@@ -120,5 +120,4 @@
         android:textColor="@color/white"
         android:layout_margin="10dp"
         android:backgroundTint="#4D176C" />
-
 </LinearLayout>
