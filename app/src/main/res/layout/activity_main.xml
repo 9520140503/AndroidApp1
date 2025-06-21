@@ -29,11 +29,11 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="?attr/colorPrimary"
+            android:background="#4D176C"
             android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
+           />
     </LinearLayout>
 
     <GridLayout
