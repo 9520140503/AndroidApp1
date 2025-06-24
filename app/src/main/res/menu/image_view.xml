@@ -5,13 +5,13 @@
     <item
         android:id="@+id/rot"
         android:title="Contact Us"
-        android:icon="@drawable/appy"
+        android:icon="@drawable/happy"
         app:showAsAction="collapseActionView" />
 
     <item
         android:id="@+id/fil"
         android:title="Feedback"
-        android:icon="@drawable/appy"
+        android:icon="@drawable/happy"
         app:showAsAction="collapseActionView" />
 
 </menu>

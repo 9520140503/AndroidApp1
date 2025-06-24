@@ -1,6 +1,7 @@
 package com.example.moodapp
 
 import android.content.Intent
+import android.graphics.Color
 import android.health.connect.datatypes.units.Length
 import android.net.Uri
 import android.os.Bundle
@@ -21,12 +22,25 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import android.view.animation.AnimationUtils;
 import android.widget.PopupMenu
+import androidx.appcompat.app.AppCompatDelegate
 
 class Sad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_sad)
+
+        val layout = findViewById<ScrollView>(R.id.sadPage) // your layout ID
+
+        // Load saved state
+        val prefs = getSharedPreferences("themePrefs", MODE_PRIVATE)
+        val isDark = prefs.getBoolean("darkMode", false)
+
+        // Apply background color
+        layout.setBackgroundColor(
+            if (isDark) Color.parseColor("#0f172a") else Color.parseColor("#C495C1")
+        )
+
         var input = findViewById<EditText>(R.id.input);
         var submit = findViewById<Button>(R.id.said);
         val boost = findViewById<Button>(R.id.boost);
@@ -48,7 +62,6 @@ class Sad : AppCompatActivity() {
             }
             false
         }
-
 
 
         //Messages Section:

@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#C495C1">
+    android:background="#C495C1"
+    android:id="@+id/contact">
 
     <TextView
         android:id="@+id/textView4"

@@ -13,6 +13,24 @@
         android:theme="@style/Theme.MoodApp"
         tools:targetApi="31">
         <activity
+            android:name=".Quiet"
+            android:exported="false"/>
+        <activity
+            android:name=".Relax"
+            android:exported="false" />
+        <activity
+            android:name=".Love"
+            android:exported="false" />
+        <activity
+            android:name=".Wow"
+            android:exported="false" />
+        <activity
+            android:name=".Happy"
+            android:exported="true" />
+        <activity
+            android:name=".SnackBar"
+            android:exported="true" />
+        <activity
             android:name=".Terms"
             android:exported="false" />
         <activity
@@ -20,9 +38,6 @@
             android:exported="false" />
         <activity
             android:name=".Contactus"
-            android:exported="false" />
-        <activity
-            android:name=".FeedBack"
             android:exported="false" />
         <activity
             android:name=".Rateus"
@@ -47,13 +62,7 @@
         </activity>
         <activity
             android:name=".Sad"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

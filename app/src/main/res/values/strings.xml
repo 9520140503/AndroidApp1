@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">Mood App</string>
     <string name="terms_text">
-    • For personal mood tracking only.\n
-    \n
-    \n
-    • Not a medical or diagnostic tool.\n
-    \n
-    \n
-    • Data stays on your device.\n
-    \n
-    \n
-    • No personal info is collected.\n
-    \n
-    \n
+    • For personal mood tracking only.&#10;
+    • Not a medical or diagnostic tool.&#10;
+    • Data stays on your device.&#10;
+    • No personal info is collected.&#10;
     • Using this app means you agree to these terms.
-</string>
+    </string>
+    <string name="app">Have a good day</string>
+    <string name="welcome">Welcome to our website</string>
+    <string name="happy_desc">Happy mood</string>
+    <string name="wow_desc">Excited mood</string>
+    <string name="love_desc">Loving mood</string>
+    <string name="relax_desc">Relaxed mood</string>
+    <string name="sad_desc">Sad mood</string>
+    <string name="quiet_desc">Quiet mood</string>
 </resources>

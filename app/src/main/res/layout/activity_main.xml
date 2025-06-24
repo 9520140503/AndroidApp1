@@ -9,40 +9,56 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:background="#3CFFFFFF"
+        >
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:layout_marginBottom="20dp"
-            android:background="#3CFFFFFF"
+            android:layout_weight="2"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="4dp"
             android:text="Mood Tracker"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="27sp"
             android:textStyle="bold"
-            />
+            android:layout_marginTop="4dp"/>
+
+        <ToggleButton
+            android:id="@+id/themeToggle"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="15sp"
+            android:background="@drawable/dark_toggle"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp"/>
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar2"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="#3CFFFFFF"
+            android:layout_marginTop="4dp"
             android:minHeight="?attr/actionBarSize"
            />
     </LinearLayout>
 
     <GridLayout
+        android:id="@+id/mygrid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="15dp"
         android:layout_weight="1"
         android:columnCount="2"
-        android:rowCount="3">
+        android:rowCount="3"
+        >
 
         <LinearLayout
             android:layout_width="0dp"
@@ -61,16 +77,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Happy"
-                android:textColor="@color/black"
+                android:textColor="#7522FA"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
             <ImageButton
+                android:id="@+id/happy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/happy" />
+                android:src="@drawable/happy"
+                android:contentDescription="@string/happy_desc"/>
         </LinearLayout>
 
         <LinearLayout
@@ -90,15 +109,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Wow"
-                android:textColor="@color/black"
+                android:textColor="#7522FA"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageButton
+                android:id="@+id/wow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/wow" />
+                android:src="@drawable/wow"
+                android:contentDescription="@string/wow_desc"/>
         </LinearLayout>
 
         <LinearLayout
@@ -117,16 +138,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Love"
-                android:textColor="@color/black"
+                android:text="Lovely"
+                android:textColor="#7522FA"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageButton
+                android:id="@+id/love"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/love" />
+                android:src="@drawable/love"
+                android:contentDescription="@string/love_desc"/>
         </LinearLayout>
 
         <LinearLayout
@@ -146,15 +169,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Relax"
-                android:textColor="@color/black"
+                android:textColor="#7522FA"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageButton
+                android:id="@+id/relax"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/relax" />
+                android:src="@drawable/relax"
+                android:contentDescription="@string/relax_desc"/>
         </LinearLayout>
 
         <LinearLayout
@@ -174,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Sad"
-                android:textColor="@color/black"
+                android:textColor="#7522FA"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -183,7 +208,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/sad" />
+                android:src="@drawable/sad"
+                android:contentDescription="@string/sad_desc"/>
         </LinearLayout>
 
         <LinearLayout
@@ -205,15 +231,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Quiet"
-                android:textColor="@color/black"
+                android:textColor="#7522FA"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageButton
+                android:id="@+id/quiet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:src="@drawable/quiet" />
+               android:src="@drawable/quiet"
+                android:contentDescription="@string/quiet_desc" />
         </LinearLayout>
 
     </GridLayout>
