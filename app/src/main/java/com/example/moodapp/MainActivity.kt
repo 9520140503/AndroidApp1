@@ -74,14 +74,13 @@ class MainActivity : AppCompatActivity() {
         actionBar.overflowIcon = hamBurger
 //        actionBar.overflowIcon?.setTint(ContextCompat.getColor(this,android.R.color.white))
 
+
         //Theme toggle: **** After this to go diff sections to add/code
         val toggle = findViewById<ToggleButton>(R.id.themeToggle)
         val moodLayout = findViewById<LinearLayout>(R.id.mood) // Or any layout
-
         // Load saved state
         val prefs = getSharedPreferences("themePrefs", MODE_PRIVATE)
         var isDark = prefs.getBoolean("darkMode", false)
-
         // Apply saved color immediately
         moodLayout.setBackgroundColor(
             if (isDark) Color.parseColor("#0f172a")
@@ -113,8 +112,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
       return  when (item.itemId){
           R.id.i1 -> {
-              Toast.makeText(this,"Rate us",Toast.LENGTH_SHORT).show()
-              val intent = Intent(this,Rateus::class.java)
+              Toast.makeText(this,"FeedBack",Toast.LENGTH_SHORT).show()
+              val intent = Intent(this,FeedBack::class.java)
               startActivity(intent)
               true
           }

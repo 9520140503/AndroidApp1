@@ -13,8 +13,11 @@
         android:theme="@style/Theme.MoodApp"
         tools:targetApi="31">
         <activity
+            android:name=".FeedBack"
+            android:exported="false" />
+        <activity
             android:name=".Quiet"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Relax"
             android:exported="false" />
