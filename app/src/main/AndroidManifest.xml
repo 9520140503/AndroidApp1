@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- //Permissions: -->
+    <!-- if the required is true : user have to give the access mandatory -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" /> <!-- //Making a phone call require the access of hardwARE -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoodApp"
         tools:targetApi="31">
+        <activity
+            android:name=".Permissions"
+            android:exported="false" />
         <activity
             android:name=".FeedBack"
             android:exported="false" />

@@ -31,10 +31,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:numStars="4"
+            android:numStars="5"
             android:stepSize="1"
             android:backgroundTint="#2261C6"
             android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            />
+
 
         <Button
             android:id="@+id/submitratingBtn"

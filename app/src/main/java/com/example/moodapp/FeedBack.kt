@@ -35,18 +35,25 @@ class FeedBack : AppCompatActivity() {
         )
 
 
-
+        //Functionalities of Page:
         val ratingBar = findViewById<RatingBar>(R.id.ratingBar)
         val submitratingBtn = findViewById<Button>(R.id.submitratingBtn)
         val editFeedBack = findViewById<EditText>(R.id.editFeedBack)
         var charCount = findViewById<TextView>(R.id.charCount)
         val submitFeedBack = findViewById<Button>(R.id.submitFeedBack)
+        val grade = findViewById<TextView>(R.id.grade)
 
         //Getting Rating:
         ratingBar.setOnRatingBarChangeListener{_, rating, _->
-            if(rating > 0f){
+            if(2f >= rating  && rating > 0f){
                 submitratingBtn.visibility = Button.VISIBLE
-                submitratingBtn.text = "Good"
+                grade.text = "good 😊"
+            }else if(3f <= rating && 4f >= rating){
+                submitratingBtn.visibility = Button.VISIBLE
+                grade.text = "very good 😍"
+            }else if(rating == 5f){
+                submitratingBtn.visibility = Button.VISIBLE
+                grade.text = "excellent 💕"
             }
         }
         submitratingBtn.setOnClickListener{
